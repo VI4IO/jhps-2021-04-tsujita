@@ -1,8 +1,8 @@
 @Misc{mpi-forum:web,
   author = 	 {{MPI Forum}},
-  OPThowpublished = {\url{http://www.mpi-forum.org/}},
-  url = 	 {http://www.mpi-forum.org/},
-  OPTrefdate =      {2019-12-10}
+  url = 	 {https://www.mpi-forum.org/},
+  howpublished = {\url{https://www.mpi-forum.org/}},
+  refdate =      {2021-04-27}
 }
 
 @Manual{mpi:mpi-1,
@@ -139,16 +139,22 @@ Time Intervals in Large Trace Files},
   author =  {{IOR}},
   OPTurl =     {https://sourceforge.net/projects/ior-sio/},
   url =     {https://github.com/hpc/ior},
-  OPThowpublished = {\url{https://sourceforge.net/projects/ior-sio/}}
+  howpublished = {\url{https://github.com/hpc/ior}},
+  lastaccessed = {2021-04-27} 
 }
 
 @Misc{MDTEST:web,
   author = {{MDTEST}},
   OPTurl = {https://sourceforge.net/projects/mdtest/},
   url = {https://github.com/hpc/ior},
-  OPThowpublished = {\url{https://sourceforge.net/projects/mdtest/}}
+  howpublished = {\url{https://sourceforge.net/projects/mdtest/}}
 }
 
+@Misc{IO500_bench:web,
+  author = {{IO500}},
+  url = {https://github.com/VI4IO/io500},
+  howpublished = {{\url https://github.com/VI4IO/io500}}
+}
 
 @InProceedings{szebenyi:scalasca-sipew08,
   author = 	 {Zolt{\'a}n Szebenyi and Brian J. N. Wylie and Felix Wolf},
@@ -421,10 +427,9 @@ and R. Thakur and R. Ross},
 @Misc{lustre:web,
   author = 	 {{Lustre}},
   OPTtitle =   {Lustre},
-  url = {http://lustre.org/},
-  year = {},
-  OPTnote = {{http://lustre.org/}},
-  OPTlastaccessed = {2017-10-25}
+  url = {https://www.lustre.org/},
+  howpublished = {\url{https://www.lustre.org/}},
+  OPTlastaccessed = {2021-04-27}
 }
 
 @TechReport{lustre-adio:whpaper-2008,
@@ -436,6 +441,12 @@ and R. Thakur and R. Ross},
   year = {2008}
 }
 
+@Misc{LMT:GitHub,
+  title        = {{Lustre Monitoring Tool}},
+  url          = {https://github.com/LLNL/lmt},
+  howpublished = {\url{https://github.com/LLNL/lmt}},
+  lastaccessed = {2021-05-16}
+}
 
 @Article{latham:pvfs2,
   author = 	 {Rob Latham and Neil Miller and Robert Ross and Phil Carns},
@@ -568,10 +579,12 @@ Performance Monitoring},
 }
 
 @InProceedings{isc14:kunkel,
-  author    = {Kunkel, Julian M. and Zimmer, Michaela and H{\"u}bbe, Nathanael and Aguilera, Alvaro and Mickler, Holger
-and Wang, Xuan and Chut, Andriy and B{\"o}nisch, Thomas and L{\"u}ttgau, Jakob and Michel, Roman and Weging, Johann},
+  author    = {Kunkel, Julian M. and Zimmer, Michaela and H{\"u}bbe, Nathanael
+and Aguilera, Alvaro and Mickler, Holger and Wang, Xuan and Chut, Andriy
+and B{\"o}nisch, Thomas and L{\"u}ttgau, Jakob and Michel, Roman and Weging, Johann},
   title     = {The {SIOX} Architecture -- Coupling Automatic Monitoring and Optimization of Parallel {I/O}},
-  booktitle = {Supercomputing, 29th International Conference, ISC2014, Leipzig, Germany, June 22-26, Proceedings},
+  booktitle = {Supercomputing, 29th International Conference, ISC2014, Leipzig,
+Germany, June 22-26, Proceedings},
   year      = {2014},
   publisher = {Springer},
   pages     = {245-260}
@@ -1967,7 +1980,7 @@ and Fumiyoshi Shoji and Mitsuo Yokokawa and Tadashi Watanabe},
 
 @article{profiler:fujitsu-tech-si,
   author = {Keiichi Ida and Yasuyuki Ohno and Shunsuke Inoue and kazuo Minami},
-  title = {Performance Profiling and Debugging on the K computer},
+  title = {Performance Profiling and Debugging on the {K computer}},
   year = {2012},
   month = {July},
   journal = {Fujitsu Sci. Tech. J.},
@@ -2021,9 +2034,11 @@ and Fumiyoshi Shoji and Mitsuo Yokokawa and Tadashi Watanabe},
 }
 
 @Misc{fugaku_info:web,
-  author = {Post-{K} ({Fugaku}) Information},
-  url = {https://postk-web.r-ccs.riken.jp/index.html},
-  OPTlastaccessed = {2020-07-07}
+  author = {{The supercomputer Fugaku}},
+  OPTurl = {https://postk-web.r-ccs.riken.jp/index.html},
+  url = {https://www.r-ccs.riken.jp/en/fugaku/},
+  howpublished  = {\url{https://www.r-ccs.riken.jp/en/fugaku/}},
+  lastaccessed = {2021-05-01}
 }
 
 @conference{morrone:LUG2011,
@@ -2171,9 +2186,21 @@ Anthony Agelastos and Michael Davis and Michael Berry},
   month =        {May},
 }
 
-@Conference{zimmer:cug16,
+@InProceedings{zimmer:cug16,
   author =       {Christopher Zimmer and Saurabh Gupta and Ver´onica G. Vergara Larrea},
   title =        {Finally, A Way to Measure Frontend {I/O} Performance},
+  booktitle =    {2016 Cray User Group Meeting (CUG)},
+  year =         {2016}
+}
+
+@InProceedings{bhimji:cug16,
+  author =       {Wahid Bhimji and Debbie Bard and Melissa Romanus and David Paul
+and Andrey Ovsyannikov and Brian Friesen and Matt Bryson and Joaquin Correa
+and Glenn K. Lockwood and Vakho Tsulaia and Suren Byna and Steve Farrell
+and Doga Gursoyz and Chris Daley and Vince Beckner and Brian Van Straalen
+and David Trebotich and Craig Tull and Gunther Weber and Nicholas J. Wright
+and Katie Antypas and Prabhat},
+  title =        {Accelerating Science with the NERSC Burst Buffer Early User Program},
   booktitle =    {2016 Cray User Group Meeting (CUG)},
   year =         {2016}
 }
@@ -2196,11 +2223,110 @@ of {Trinity Phase II}},
   year =         {2018}
 }
 
+@INPROCEEDINGS{wang:cluster18,
+  author = {Wang, Teng and Snyder, Shane and Lockwood, Glenn and Carns, Philip
+and Wright, Nicholas and Byna, Suren},
+  title = {{IOMiner}: Large-Scale Analytics Framework for Gaining Knowledge from {I/O} Logs},
+  booktitle = {2018 IEEE International Conference on Cluster Computing (CLUSTER)},
+  year = {2018},
+  volume = {},
+  number = {},
+  pages = {466-476},
+  OPTdoi = {10.1109/CLUSTER.2018.00062}
+}
+
 @Conference{crayview:cug18,
   author =       {Patricia Langer},
   title =        {Diagnosing Performance Issues in {Cray ClusterStor} Systems},
   booktitle =    {2018 Cray User Group Meeting (CUG)},
   year =         {2018}
+}
+
+@Conference{ahlgren:cug18,
+  author =       {Ville Ahlgren and Stefan Andersson and Jim Brandt
+and Nicholas P. Cardo and Sudheer Chunduri and Jeremy Enos and Parks Fields
+and Ann Gentile and Richard Gerber and Joe Greenseid and Annette Greiner
+and Bilel Hadri and Yun (Helen) He and Dennis Hoppe and Urpo Kaila
+and Kaki Kelly and Mark Klein and Alex Kristiansen and Steve Leak
+and Mike Mason and Kevin Pedretti and Jean-Guillaume Piccinali
+and Jason Repik and Jim Rogers and Susanna Salminen and Mike Showerman
+and Cary Whitney and Jim Williams},
+  title =        {{Cray} System Monitoring: Successes, Requirements, and Priorities},
+  booktitle =    {2018 Cray User Group Meeting (CUG)},
+  year =         {2018}
+}
+
+@inproceedings{behzad:sc13,
+   author = {Behzad, Babak and Luu, Huong Vu Thanh and Huchette, Joseph and Byna, Surendra
+and Prabhat and Aydt, Ruth and Koziol, Quincey and Snir, Marc},
+   title = {Taming Parallel {I/O} Complexity with Auto-Tuning},
+   year = {2013},
+   OPTisbn = {9781450323789},
+   publisher = {ACM},
+   OPTdoi = {10.1145/2503210.2503278},
+   booktitle = {Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis},
+   articleno = {68},
+   numpages = {12},
+   series = {SC'13}
+}
+
+@inproceedings{tessier:com-hpc16,
+   author = {Tessier, Fran\c{c}ois and Malakar, Preeti and Vishwanath, Venkatram
+and Jeannot, Emmanuel and Isaila, Florin},
+   title = {Topology-Aware Data Aggregation for Intensive {I/O} on Large-Scale Supercomputers},
+   year = {2016},
+   publisher = {IEEE Press},
+   booktitle = {Proceedings of the First Workshop on Optimization of Communication in HPC},
+   pages = {73–81},
+   numpages = {9},
+   series = {COM-HPC'16}
+}
+
+@inproceedings{vazhkudai:sc18,
+  author = {Vazhkudai, Sudharshan S. and de Supinski, Bronis R. and Bland, Arthur S.
+and Geist, Al and Sexton, James and Kahle, Jim and Zimmer, Christopher J.
+and Atchley, Scott and Oral, Sarp and Maxwell, Don E. and Larrea, Veronica G. Vergara
+and Bertsch, Adam and Goldstone, Robin and Joubert, Wayne and Chambreau, Chris
+and Appelhans, David and Blackmore, Robert and Casses, Ben and Chochia, George
+and Davison, Gene and Ezell, Matthew A. and Gooding, Tom and Gonsiorowski, Elsa
+and Grinberg, Leopold and Hanson, Bill and Hartner, Bill and Karlin, Ian
+and Leininger, Matthew L. and Leverman, Dustin and Marroquin, Chris and Moody, Adam
+and Ohmacht, Martin and Pankajakshan, Ramesh and Pizzano, Fernando and Rogers, James H.
+and Rosenburg, Bryan and Schmidt, Drew and Shankar, Mallikarjun and Wang, Feiyi
+and Watson, Py and Walkup, Bob and Weems, Lance D. and Yin, Junqi},
+   title = {The Design, Deployment, and Evaluation of the CORAL Pre-Exascale Systems},
+   year = {2018},
+   publisher = {IEEE Press},
+   booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage, and Analysis},
+   articleno = {52},
+   numpages = {12},
+   series = {SC'18}
+}
+
+@inproceedings{oral:sc19,
+   author = {Oral, Sarp and Vazhkudai, Sudharshan S. and Wang, Feiyi and Zimmer, Christopher
+and Brumgard, Christopher and Hanley, Jesse and Markomanolis, George and Miller, Ross
+and Leverman, Dustin and Atchley, Scott and Larrea, Veronica Vergara},
+   title = {End-to-End {I/O} Portfolio for the Summit Supercomputing Ecosystem},
+   year = {2019},
+   publisher = {ACM},
+   OPTdoi = {10.1145/3295500.3356157},
+   booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+   articleno = {63},
+   numpages = {14},
+   series = {SC'19}
+}
+
+@ARTICLE{di:tpds2019,
+  author =   {Di, Sheng and Guo, Hanqi and Gupta, Rinku and Pershey, Eric R.
+and Snir, Marc and Cappello, Franck},
+  title =   {Exploring Properties and Correlations of Fatal Events in a Large-Scale {HPC} System},
+  journal = {IEEE Transactions on Parallel and Distributed Systems},
+  year =    {2019},
+  volume =  {30},
+  number =  {2},
+  pages =   {361-374},
+  OPTdoi =  {10.1109/TPDS.2018.2864184}
 }
 
 @inproceedings{crosby:BW-XSEDE12,
@@ -2339,7 +2465,7 @@ via Task Mapping},
   title = 	 {Locality-Aware Process Mapping for High Performance
   Collective {MPI-IO} on {FEFS} with {Tofu} Interconnect},
   booktitle = {Proceedings of the 21th European MPI Users' Group Meeting},
-  series = {EuroMPI/ASIA `14},
+  series = {EuroMPI/ASIA '14},
   pages = 	 {157:157--157:162},
   articleno = {157},
   year = 	 {2014},
@@ -2587,6 +2713,23 @@ in Asia-Pacific Region, January 28-31, 2018},
    publisher = {ACM}
 }
 
+@InProceedings {chunduri:pmbs19,
+   author = {Sudheer Chunduri and Elise Jennings and Kevin Harms
+and Christopher Knight and Scott Parker},
+   title = {A Generalized Statistics-Based Model for Predicting Network-Induced Variability},
+   booktitle = {2019 IEEE/ACM Performance Modeling, Benchmarking and Simulation
+of High Performance Computer Systems (PMBS)},
+   year = {2019},
+   volume = {},
+   OPTissn = {},
+   pages = {59-72},
+   OPTdoi = {10.1109/PMBS49563.2019.00013},
+   OPTurl = {https://doi.ieeecomputersociety.org/10.1109/PMBS49563.2019.00013},
+   publisher = {IEEE Computer Society},
+   OPTaddress = {Los Alamitos, CA, USA},
+   month = {nov}
+}
+
 @InProceedings{qian:MSST2013,
   author={Yingjin Qian and Ruihai Yi and Yimo Du and Nong Xiao and Shiyao Jin},
   booktitle={IEEE 29th Symposium on Mass Storage Systems and Technologies (MSST 2013)},
@@ -2614,24 +2757,37 @@ in Asia-Pacific Region, January 28-31, 2018},
 }
 
 @InProceedings{luu:HPDC2015,
-  author = {Luu, Huong and Winslett, Marianne and Gropp, William and Ross, Robert
-      and Carns, Philip and Harms, Kevin and Prabhat, Mr and Byna, Suren and Yao, Yushu},
-  title = {A Multiplatform Study of {I/O} Behavior on Petascale Supercomputers},
+  author =    {Luu, Huong and Winslett, Marianne and Gropp, William and Ross, Robert
+and Carns, Philip and Harms, Kevin and Prabhat, Mr and Byna, Suren and Yao, Yushu},
+  title =     {A Multiplatform Study of {I/O} Behavior on Petascale Supercomputers},
   booktitle = {Proceedings of the 24th International Symposium on High-Performance
-      Parallel and Distributed Computing},
-  series = {HPDC '15},
-  year = {2015},
-  OPTisbn = {978-1-4503-3550-8},
-  OPTlocation = {Portland, Oregon, USA},
-  pages = {33--44},
-  OPTnumpages = {12},
-  OPTurl = {http://doi.acm.org/10.1145/2749246.2749269},
-  OPTdoi = {10.1145/2749246.2749269},
+Parallel and Distributed Computing},
+  series =    {HPDC '15},
+  year =      {2015},
+  OPTisbn =   {978-1-4503-3550-8},
+  pages =     {33-44},
+  numpages =  {12},
+  OPTurl =    {http://doi.acm.org/10.1145/2749246.2749269},
+  doi =       {10.1145/2749246.2749269},
   OPTacmid = {2749269},
-  publisher = {ACM},
-  OPTaddress = {New York, NY, USA},
-  OPTkeywords = {hpc, input/output, parallel i/o, performance analysis},
-} 
+  publisher = {ACM}
+}
+
+@InProceedings{white:pearc18,
+  author = {White, Joseph P. and Kofke, Alexander D. and DeLeon, Robert L. and Innus, Martins
+and Jones, Matthew D. and Furlani, Thomas R.},
+  title = {Automatic Characterization of {HPC} Job Parallel Filesystem {I/O} Patterns},
+  year = {2018},
+  isbn = {9781450364461},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3219104.3219121},
+  doi = {10.1145/3219104.3219121},
+  booktitle = {Proceedings of the Practice and Experience on Advanced Research Computing},
+  articleno = {3},
+  numpages = {8},
+  series = {PEARC '18}
+}
 
 @article{Satoh:NICAM_JRN_2008,
   author = {M. Satoh and T. Matsuno and H. Tomita and H. Miura and
@@ -2698,6 +2854,19 @@ in Asia-Pacific Region, January 28-31, 2018},
   publisher = {{IEEE} Computer Society},
   OPTnote = 	 {},
   OPTannote = 	 {}
+}
+
+@Article{dorier:fgcs2016,
+  author =  {Matthieu Dorier and Orcun Yildiz and Shadi Ibrahim
+and Anne-C\acute{e}cile Orgerie and Gabriel Antoniu},
+  title =   {On the energy footprint of {I/O} management in Exascale {HPC} systems},
+  journal = {Future Generation Computer Systems},
+  volume =  {62},
+  pages =   {17-28},
+  year =    {2016},
+  OPTissn =   {0167-739X},
+  doi =     {https://doi.org/10.1016/j.future.2016.03.002},
+  OPTurl = {https://www.sciencedirect.com/science/article/pii/S0167739X16300462}
 }
 
 @InProceedings{yildiz:ipdps16,
@@ -2851,7 +3020,7 @@ and Nosayba El-Sayed and Haidong Lan and Yibo Yang and Jidong Zhai and Weiguo Li
 
 @Article{shoji:ParCo2017,
   author = {Fumiyoshi Shoji},
-  title = {Lessons learned from development and operation of the K computer },
+  title = {Lessons learned from development and operation of the {K computer} },
   journal = {Parallel Computing},
   year = {2017},
   volume = {64},
@@ -2917,4 +3086,29 @@ and Nosayba El-Sayed and Haidong Lan and Yibo Yang and Jidong Zhai and Weiguo Li
   doi = {10.1109/CLUSTER.2017.80},
   OPTnote = 	 {},
   OPTannote = 	 {}
+}
+
+@Misc{cray:aries_overview,
+  author = {{Aries Network Overview}},
+  url = {https://pubs.cray.com/bundle/Aries_Hardware_Counters_S-0045-40/page/Aries_Hardware_Counters.html},
+  howpublished = {\url{https://pubs.cray.com/bundle/Aries_Hardware_Counters_S-0045-40/page/Aries_Hardware_Counters.html}},
+  lastaccesed = {2021-05-05}
+}
+
+@Misc{cray:aries_hardware_counters,
+  author = {{Aries Hardware Counters}},
+  url = {https://pubs.cray.com/bundle/Aries_Hardware_Counters_S-0045-40/page/Aries_Hardware_Counters.html},
+  howpublished = {\url{https://pubs.cray.com/bundle/Aries_Hardware_Counters_S-0045-40/page/Aries_Hardware_Counters.html}},
+  lastaccessed = {2021-05-05}
+}
+
+@InProceedings{alverson:hoti10,
+  author = {Alverson, Robert and Roweth, Duncan and Kaplan, Larry},
+  title = {The Gemini System Interconnect},
+  booktitle = {2010 18th IEEE Symposium on High Performance Interconnects}, 
+  year = {2010},
+  volume = {},
+  number = {},
+  pages = {83-87},
+  OPTdoi = {10.1109/HOTI.2010.23}
 }
